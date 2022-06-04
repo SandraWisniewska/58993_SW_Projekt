@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "58993_SW_Projekt/1.0.0": {
+        "runtime": {
+          "58993_SW_Projekt.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "58993_SW_Projekt/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
