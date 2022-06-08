@@ -17,3 +17,4 @@ C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcorea
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\58993_SW_Projekt.genruntimeconfig.cache
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.Sort_UC.resources
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.Properties.Resources.resources
+C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.Compress_UC.resources

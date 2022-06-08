@@ -34,5 +34,14 @@ namespace _58993_SW_Projekt
             panel1.Controls.Add(sort_Uc);
             sort_Uc.BringToFront();
         }
+
+        private void algorytmKompresujacyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Compress_UC compress_UC = new Compress_UC();
+            compress_UC.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(compress_UC);
+            compress_UC.BringToFront();
+        }
     }
 }

@@ -1,6 +1,6 @@
 using System;
 
-public class SortowanieTablicy
+public class SortAlgorithm
 {
 
     public class SortInfo
@@ -15,20 +15,8 @@ public class SortowanieTablicy
         }
     }
 
-    //public static void Main()
-    //{
-    //    Console.WriteLine("======= Sortowanie przez wstawianie =======");
-    //    BubbleSort();
-    //    Console.WriteLine("======= /Sortowanie przez wstawianie =======\n");
-
-    //    Console.WriteLine("======= Sortowanie bąbelkowe ======= ");
-    //    InsertionSort();
-    //    Console.WriteLine("======= /Sortowanie bąbelkowe =======");
-    //}
-
     public SortInfo InsertionSort(int[] tablica)
     {
-        //int[] randomArray = GenerateWithRandomNumbers();
         int[] randomArray = tablica;
 
         int numberOfChanges = 0;
@@ -44,7 +32,6 @@ public class SortowanieTablicy
             }
             randomArray[tmpI + 1] = tmp;
         }
-
         return new SortInfo(randomArray, numberOfChanges);
     }
 
@@ -66,23 +53,6 @@ public class SortowanieTablicy
                 }
             }
         }
-
-
         return new SortInfo(randomArray, numberOfChanges);
-    }
-
-    public static int[] GenerateWithRandomNumbers()
-    {
-        var rand = new Random();
-        int[] randomArray = new int[20];
-        for (int i = 0; i < randomArray.Length - 1; i++)
-        {
-            //losuje w przedziale 0-100
-            randomArray[i] = rand.Next(101);
-        }
-        Console.WriteLine("Wygenerowana tablica: ");
-        Console.WriteLine(string.Join(",", randomArray));
-
-        return randomArray;
     }
 }

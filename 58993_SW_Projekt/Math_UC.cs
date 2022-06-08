@@ -13,53 +13,56 @@ namespace _58993_SW_Projekt
         public Math_UC()
         {
             InitializeComponent();
+            calculator = new Calculator();
         }
 
-        string sign;
-        double num1;
-        double num2;
-        bool startNewNumber = true;
-        bool gcd = false;
+        private Calculator calculator;
+
 
         private void button_num_Click(object sender, EventArgs e)
         {
             Button pressedButton = (Button)sender;
-            if (startNewNumber || SW_58993_textBox1.Text.Equals("0"))
+            if (this.calculator.startNewNumber || SW_58993_textBox1.Text.Equals("0"))
             {
                 SW_58993_textBox1.Text = "";
 
             }
             SW_58993_textBox1.Text += pressedButton.Text;
-            startNewNumber = false;
+            this.calculator.startNewNumber = false;
         }
 
         private void buttonEqual_Click(object sender, EventArgs e)
         {
-            num2 = Convert.ToDouble(SW_58993_textBox1.Text);
-            SW_58993_label1.Text = String.Empty;
-            switch (sign)
+            if (this.calculator.startNewNumber == false)
+            {
+                this.calculator.num2 = Convert.ToDouble(SW_58993_textBox1.Text);
+                SW_58993_label1.Text = String.Empty;
+            }
+            switch (this.calculator.sign)
             {
                 case "+":
-                    SW_58993_textBox1.Text = Convert.ToString(num1 + num2);
+                    SW_58993_textBox1.Text = Convert.ToString(this.calculator.add());
                     break;
                 case "-":
-                    SW_58993_textBox1.Text = Convert.ToString(num1 - num2);
+                    SW_58993_textBox1.Text = Convert.ToString(this.calculator.sub());
                     break;
                 case "*":
-                    SW_58993_textBox1.Text = Convert.ToString(num1 * num2);
+                    SW_58993_textBox1.Text = Convert.ToString(this.calculator.multi());
                     break;
                 case "/":
-                    if (num2 == 0)
+                    try
                     {
-                        SW_58993_textBox1.Text = "Cannot be divided by 0";
+                        SW_58993_textBox1.Text = Convert.ToString(this.calculator.div());
+
                     }
-                    else
+                    catch (DivideByZeroException)
                     {
-                        SW_58993_textBox1.Text = Convert.ToString(num1 / num2);
+                        SW_58993_label1.Text = "Cannot be divided by 0";
+                        SW_58993_textBox1.Text = "0";
                     }
                     break;
             }
-            startNewNumber = true;
+            this.calculator.startNewNumber = true;
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -83,11 +86,11 @@ namespace _58993_SW_Projekt
         }
         private void Operation(string sign)
         {
-            num1 = Convert.ToDouble(SW_58993_textBox1.Text);
+            this.calculator.num1 = Convert.ToDouble(SW_58993_textBox1.Text);
             SW_58993_label1.Text = SW_58993_textBox1.Text;
             SW_58993_label1.Text += sign;
-            this.sign = sign;
-            startNewNumber = true;
+            this.calculator.sign = sign;
+            this.calculator.startNewNumber = true;
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
@@ -95,6 +98,8 @@ namespace _58993_SW_Projekt
             if (SW_58993_textBox1.Text.Length == 1)
             {
                 SW_58993_textBox1.Text = "0";
+                this.calculator.num1 = 0;
+                this.calculator.num2 = 0;
             }
             else
             {
@@ -109,7 +114,7 @@ namespace _58993_SW_Projekt
             {
                 SW_58993_label1.Text = SW_58993_textBox1.Text + " NWW";
                 int[] numbers = Array.ConvertAll<string, int>(SW_58993_textBox1.Text.Split(','), int.Parse);
-                SW_58993_textBox1.Text = calculate_NWW(numbers[0], numbers[1]).ToString();
+                SW_58993_textBox1.Text = this.calculator.calculate_NWW(numbers[0], numbers[1]).ToString();
             }
             else
             {
@@ -124,7 +129,7 @@ namespace _58993_SW_Projekt
             {
                 SW_58993_label1.Text = SW_58993_textBox1.Text + " NWD";
                 int[] numbers = Array.ConvertAll<string, int>(SW_58993_textBox1.Text.Split(','), int.Parse);
-                SW_58993_textBox1.Text = calculate_NWD(numbers[0], numbers[1]).ToString();
+                SW_58993_textBox1.Text = this.calculator.calculate_NWD(numbers[0], numbers[1]).ToString();
             }
             else
             {
@@ -132,22 +137,14 @@ namespace _58993_SW_Projekt
             }
         }
 
-        private int calculate_NWD(int num1, int num2)
+        private void SW_58993_buttonComma_Click(object sender, EventArgs e)
         {
-            int Remainder;
-
-            while (num2 != 0)
+            Button pressedButton = (Button)sender;
+            if (SW_58993_textBox1.Text.IndexOf(",") == -1)
             {
-                Remainder = num1 % num2;
-                num1 = num2;
-                num2 = Remainder;
+                SW_58993_textBox1.Text += pressedButton.Text;
             }
 
-            return num1;
-        }
-        private int calculate_NWW(int num1, int num2)
-        {
-            return (num1 / calculate_NWD(num1, num2)) * num2;
         }
     }
 }
