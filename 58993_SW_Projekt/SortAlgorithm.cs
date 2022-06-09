@@ -2,12 +2,15 @@ using System;
 
 public class SortAlgorithm
 {
-
+    //Klasa wewnetrzna SortInfo s³u¿y do zwracania wyników sortowania:
+    // - posortowanej tablicy
+    // - iloœci operacji wykonanych podczas sortowania
     public class SortInfo
     {
         public int[] sortedArray;
         public int numberOfSortOperations;
 
+        //konstruktor ustawiaj¹cy posortowana tablice i iloœæ operacji
         public SortInfo(int[] sortedArray, int numberOfSortOperations)
         {
             this.sortedArray = sortedArray;
@@ -15,6 +18,8 @@ public class SortAlgorithm
         }
     }
 
+    //Funkcja do sortowania przez wstawianie zwracajaca
+    //obiekt SortInfo(posortowana tablice i ilosc operacji)
     public SortInfo InsertionSort(int[] tablica)
     {
         int[] randomArray = tablica;
@@ -35,6 +40,8 @@ public class SortAlgorithm
         return new SortInfo(randomArray, numberOfChanges);
     }
 
+    //Funkcja do sortowania b¹belkowego zwracajaca
+    //obiekt SortInfo(posortowana tablice i ilosc operacji)
     public SortInfo BubbleSort(int[] tablica)
     {
         int[] randomArray = tablica;

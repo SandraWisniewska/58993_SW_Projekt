@@ -17,31 +17,37 @@ namespace _58993_SW_Projekt
             InitializeComponent();
         }
 
+        //zdarzenie następujące po kliknieciu opcji w menu
+        //do pokazania algorytmu matematycznego
         private void algorytmMatematycznyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Math_UC math_UC = new Math_UC();
-            math_UC.Dock = DockStyle.Fill;
-            panel1.Controls.Clear();
-            panel1.Controls.Add(math_UC);
-            math_UC.BringToFront();
+            showUC(new Math_UC());
         }
 
+        //zdarzenie następujące po kliknieciu opcji w menu
+        //do pokazania algorytmu sortującego
         private void algorytmSortujacyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Sort_UC sort_Uc = new Sort_UC();
-            sort_Uc.Dock = DockStyle.Fill;
-            panel1.Controls.Clear();
-            panel1.Controls.Add(sort_Uc);
-            sort_Uc.BringToFront();
+            showUC(new Sort_UC());
         }
 
+        //zdarzenie następujące po kliknieciu opcji w menu
+        //do pokazania algorytmu kompresującego
         private void algorytmKompresujacyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Compress_UC compress_UC = new Compress_UC();
-            compress_UC.Dock = DockStyle.Fill;
+            showUC(new Compress_UC());
+        }
+
+        //funkcja służąca do ustawiania user controlki na pierwszym planie
+        private void showUC(UserControl uc)
+        {
+            uc.Dock = DockStyle.Fill;
+            //usuń kontrolki z widoku
             panel1.Controls.Clear();
-            panel1.Controls.Add(compress_UC);
-            compress_UC.BringToFront();
+            //dodaj kontrolke do widoku
+            panel1.Controls.Add(uc);
+            //ustaw kontrolke na froncie
+            uc.BringToFront();
         }
     }
 }

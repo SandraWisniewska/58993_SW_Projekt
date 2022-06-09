@@ -13,24 +13,30 @@ namespace _58993_SW_Projekt
         public Math_UC()
         {
             InitializeComponent();
+            // Inicjalizacja klasy Calculator
             calculator = new Calculator();
         }
 
         private Calculator calculator;
 
-
+        //Obsługa klawiszy numerycznych
         private void button_num_Click(object sender, EventArgs e)
         {
             Button pressedButton = (Button)sender;
+            // Jezeli jest to pierwsz liczba działania lub pole wynikowe jest 0
+            // to przypisz wartosc pustą
             if (this.calculator.startNewNumber || SW_58993_textBox1.Text.Equals("0"))
             {
                 SW_58993_textBox1.Text = "";
 
             }
+            // przypisz do pola wynikowego wartość z naciśniętego przycisku
             SW_58993_textBox1.Text += pressedButton.Text;
+            // ustawienie zmiennej pomocniczej startNewNumber na false
             this.calculator.startNewNumber = false;
         }
 
+        //zdarzenie po klinieciu przycisku "równa się"
         private void buttonEqual_Click(object sender, EventArgs e)
         {
             if (this.calculator.startNewNumber == false)
@@ -38,6 +44,7 @@ namespace _58993_SW_Projekt
                 this.calculator.num2 = Convert.ToDouble(SW_58993_textBox1.Text);
                 SW_58993_label1.Text = String.Empty;
             }
+            // wykonanie odpowiednie operacji matematycznej na podstawie pola sign z Calculator
             switch (this.calculator.sign)
             {
                 case "+":
@@ -55,13 +62,16 @@ namespace _58993_SW_Projekt
                         SW_58993_textBox1.Text = Convert.ToString(this.calculator.div());
 
                     }
+                    //Obsługa wyjątku dzielenia przez zero
                     catch (DivideByZeroException)
                     {
+                        // ustawienie odpowiednich komunikatow dzielenia przez zero
                         SW_58993_label1.Text = "Cannot be divided by 0";
                         SW_58993_textBox1.Text = "0";
                     }
                     break;
             }
+            // po wykonaniu operacji matematycznej ustawienie zmiennej pomocniczej na true
             this.calculator.startNewNumber = true;
         }
 
@@ -84,6 +94,8 @@ namespace _58993_SW_Projekt
         {
             Operation("/");
         }
+
+        //funkcje Operation służy do ustawiania znaku operacji matematycznej
         private void Operation(string sign)
         {
             this.calculator.num1 = Convert.ToDouble(SW_58993_textBox1.Text);
@@ -95,6 +107,8 @@ namespace _58993_SW_Projekt
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
+            //jeżeli przycisk back zostal nacisniety gdy została tylko jedna cyfra
+            // wtedy liczby są czyszczone i ustawiane, w polu wyniku, jest zero
             if (SW_58993_textBox1.Text.Length == 1)
             {
                 SW_58993_textBox1.Text = "0";
@@ -107,8 +121,10 @@ namespace _58993_SW_Projekt
             }
         }
 
+        //obsluga przycisku do najmnejszej wspólnej wielokrotności
         private void buttonNWW_Click(object sender, EventArgs e)
         {
+            //sprawdzenie czy liczby oddzielone są przecinkiem
             string[] nums = SW_58993_textBox1.Text.Split(',');
             if (nums.Length == 2)
             {
@@ -122,9 +138,11 @@ namespace _58993_SW_Projekt
             }
         }
 
+        //obsługa przycisku do najwiekszego wspólnego dzielnika
         private void buttonNWD_Click(object sender, EventArgs e)
         {
             string[] nums = SW_58993_textBox1.Text.Split(',');
+            //sprawdzenie czy liczby oddzielone są przecinkiem
             if (nums.Length == 2)
             {
                 SW_58993_label1.Text = SW_58993_textBox1.Text + " NWD";

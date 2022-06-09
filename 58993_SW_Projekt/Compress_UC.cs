@@ -60,9 +60,12 @@ namespace _58993_SW_Projekt
 
         }
 
+        //zdarzenie uruchamiane na każdą zmiane w polu do wprowadzania danych
+        //słuące do walidacji
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             string value = ((TextBox)sender).Text;
+            //kompresja może zostać uruchomiona dla conajmniej dwóch róznych znaków
             if (value.Distinct().ToArray().Length <= 1)
             {
                 label5.Visible = true;

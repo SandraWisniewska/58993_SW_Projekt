@@ -156,10 +156,15 @@
 
         #endregion
 
+        //komponent menu
         private System.Windows.Forms.MenuStrip menuStrip1;
+        //opcja Program w menu
         private System.Windows.Forms.ToolStripMenuItem programToolStripMenuItem;
+        //podopcja Algorytm matematyczny w menu
         private System.Windows.Forms.ToolStripMenuItem algorytmMatematycznyToolStripMenuItem;
+        //podopcja Algorytm sortujący w menu
         private System.Windows.Forms.ToolStripMenuItem algorytmSortujacyToolStripMenuItem;
+        //podopcja Algorytm kompresujący w menu
         private System.Windows.Forms.ToolStripMenuItem algorytmKompresujacyToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
