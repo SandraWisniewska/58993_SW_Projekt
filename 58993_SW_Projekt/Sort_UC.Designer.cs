@@ -31,7 +31,7 @@
             this.SW_58993_textBox1 = new System.Windows.Forms.TextBox();
             this.SW_58993_label1 = new System.Windows.Forms.Label();
             this.SW_58993_radioBubble = new System.Windows.Forms.RadioButton();
-            this.SW_58993_radioQuick = new System.Windows.Forms.RadioButton();
+            this.SW_58993_radioInsertion = new System.Windows.Forms.RadioButton();
             this.SW_58993_button1 = new System.Windows.Forms.Button();
             this.SW_58993_textBox2 = new System.Windows.Forms.TextBox();
             this.SW_58993_label2 = new System.Windows.Forms.Label();
@@ -73,17 +73,17 @@
             this.SW_58993_radioBubble.Text = "bąbelkowe";
             this.SW_58993_radioBubble.UseVisualStyleBackColor = true;
             // 
-            // SW_58993_radioQuick
+            // SW_58993_radioInsertion
             // 
-            this.SW_58993_radioQuick.AutoSize = true;
-            this.SW_58993_radioQuick.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SW_58993_radioQuick.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.SW_58993_radioQuick.Location = new System.Drawing.Point(214, 169);
-            this.SW_58993_radioQuick.Name = "SW_58993_radioQuick";
-            this.SW_58993_radioQuick.Size = new System.Drawing.Size(97, 34);
-            this.SW_58993_radioQuick.TabIndex = 3;
-            this.SW_58993_radioQuick.Text = "quick";
-            this.SW_58993_radioQuick.UseVisualStyleBackColor = true;
+            this.SW_58993_radioInsertion.AutoSize = true;
+            this.SW_58993_radioInsertion.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SW_58993_radioInsertion.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.SW_58993_radioInsertion.Location = new System.Drawing.Point(214, 169);
+            this.SW_58993_radioInsertion.Name = "SW_58993_radioInsertion";
+            this.SW_58993_radioInsertion.Size = new System.Drawing.Size(224, 34);
+            this.SW_58993_radioInsertion.TabIndex = 3;
+            this.SW_58993_radioInsertion.Text = "przez wstawianie";
+            this.SW_58993_radioInsertion.UseVisualStyleBackColor = true;
             // 
             // SW_58993_button1
             // 
@@ -157,7 +157,7 @@
             this.Controls.Add(this.SW_58993_label2);
             this.Controls.Add(this.SW_58993_textBox2);
             this.Controls.Add(this.SW_58993_button1);
-            this.Controls.Add(this.SW_58993_radioQuick);
+            this.Controls.Add(this.SW_58993_radioInsertion);
             this.Controls.Add(this.SW_58993_radioBubble);
             this.Controls.Add(this.SW_58993_label1);
             this.Controls.Add(this.SW_58993_textBox1);
@@ -173,7 +173,7 @@
         private System.Windows.Forms.TextBox SW_58993_textBox1;
         private System.Windows.Forms.Label SW_58993_label1;
         private System.Windows.Forms.RadioButton SW_58993_radioBubble;
-        private System.Windows.Forms.RadioButton SW_58993_radioQuick;
+        private System.Windows.Forms.RadioButton SW_58993_radioInsertion;
         private System.Windows.Forms.Button SW_58993_button1;
         private System.Windows.Forms.TextBox SW_58993_textBox2;
         private System.Windows.Forms.Label SW_58993_label2;

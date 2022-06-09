@@ -39,7 +39,7 @@ namespace _58993_SW_Projekt
                 this.SW_58993_label4.Visible = true;
             }
             //jezeli wybrane jest sortowanie przez wstawianie
-            else if (this.SW_58993_radioQuick.Checked == true)
+            else if (this.SW_58993_radioInsertion.Checked == true)
             {
                 //sortowanie przez wstawianie, a wartość zwracacna przypisana jest do odpowiednich pól
                 SortAlgorithm.SortInfo sortInfo = this.Sortowanie.InsertionSort(arrayToSort);
