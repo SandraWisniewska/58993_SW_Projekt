@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace _58993_SW_Projekt
 {
-    internal class HuffmanCompression
+    internal class SW_58993_HuffmanCompression
     {
         public class SW_58993_WystepujacyZnak
         {

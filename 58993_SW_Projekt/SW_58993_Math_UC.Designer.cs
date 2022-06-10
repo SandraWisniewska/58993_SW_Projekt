@@ -1,6 +1,6 @@
 ﻿namespace _58993_SW_Projekt
 {
-    partial class Math_UC
+    partial class SW_58993_Math_UC
     {
         /// <summary> 
         /// Wymagana zmienna projektanta.
@@ -11,13 +11,13 @@
         /// Wyczyść wszystkie używane zasoby.
         /// </summary>
         /// <param name="disposing">prawda, jeżeli zarządzane zasoby powinny zostać zlikwidowane; Fałsz w przeciwnym wypadku.</param>
-        protected override void Dispose(bool disposing)
+        protected override void Dispose(bool SW_58993_disposing)
         {
-            if (disposing && (components != null))
+            if (SW_58993_disposing && (components != null))
             {
                 components.Dispose();
             }
-            base.Dispose(disposing);
+            base.Dispose(SW_58993_disposing);
         }
 
         #region Kod wygenerowany przez Projektanta składników
@@ -133,7 +133,7 @@
             this.SW_58993_buttonEqual.TabIndex = 18;
             this.SW_58993_buttonEqual.Text = "=";
             this.SW_58993_buttonEqual.UseVisualStyleBackColor = false;
-            this.SW_58993_buttonEqual.Click += new System.EventHandler(this.buttonEqual_Click);
+            this.SW_58993_buttonEqual.Click += new System.EventHandler(this.SW_58993_buttonEqual_Click);
             // 
             // SW_58993_button0
             // 
@@ -150,7 +150,7 @@
             this.SW_58993_button0.TabIndex = 17;
             this.SW_58993_button0.Text = "0";
             this.SW_58993_button0.UseVisualStyleBackColor = false;
-            this.SW_58993_button0.Click += new System.EventHandler(this.button_num_Click);
+            this.SW_58993_button0.Click += new System.EventHandler(this.SW_58993_button_num_Click);
             // 
             // SW_58993_buttonComma
             // 
@@ -182,7 +182,7 @@
             this.SW_58993_buttonAdd.TabIndex = 15;
             this.SW_58993_buttonAdd.Text = "+";
             this.SW_58993_buttonAdd.UseVisualStyleBackColor = false;
-            this.SW_58993_buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.SW_58993_buttonAdd.Click += new System.EventHandler(this.SW_58993_buttonAdd_Click);
             // 
             // SW_58993_button3
             // 
@@ -199,7 +199,7 @@
             this.SW_58993_button3.TabIndex = 14;
             this.SW_58993_button3.Text = "3";
             this.SW_58993_button3.UseVisualStyleBackColor = false;
-            this.SW_58993_button3.Click += new System.EventHandler(this.button_num_Click);
+            this.SW_58993_button3.Click += new System.EventHandler(this.SW_58993_button_num_Click);
             // 
             // SW_58993_button2
             // 
@@ -216,7 +216,7 @@
             this.SW_58993_button2.TabIndex = 13;
             this.SW_58993_button2.Text = "2";
             this.SW_58993_button2.UseVisualStyleBackColor = false;
-            this.SW_58993_button2.Click += new System.EventHandler(this.button_num_Click);
+            this.SW_58993_button2.Click += new System.EventHandler(this.SW_58993_button_num_Click);
             // 
             // SW_58993_button1
             // 
@@ -233,7 +233,7 @@
             this.SW_58993_button1.TabIndex = 12;
             this.SW_58993_button1.Text = "1";
             this.SW_58993_button1.UseVisualStyleBackColor = false;
-            this.SW_58993_button1.Click += new System.EventHandler(this.button_num_Click);
+            this.SW_58993_button1.Click += new System.EventHandler(this.SW_58993_button_num_Click);
             // 
             // SW_58993_buttonSubtract
             // 
@@ -249,7 +249,7 @@
             this.SW_58993_buttonSubtract.TabIndex = 11;
             this.SW_58993_buttonSubtract.Text = "-";
             this.SW_58993_buttonSubtract.UseVisualStyleBackColor = false;
-            this.SW_58993_buttonSubtract.Click += new System.EventHandler(this.buttonSubtract_Click);
+            this.SW_58993_buttonSubtract.Click += new System.EventHandler(this.SW_58993_buttonSubtract_Click);
             // 
             // SW_58993_button6
             // 
@@ -266,7 +266,7 @@
             this.SW_58993_button6.TabIndex = 10;
             this.SW_58993_button6.Text = "6";
             this.SW_58993_button6.UseVisualStyleBackColor = false;
-            this.SW_58993_button6.Click += new System.EventHandler(this.button_num_Click);
+            this.SW_58993_button6.Click += new System.EventHandler(this.SW_58993_button_num_Click);
             // 
             // SW_58993_button5
             // 
@@ -283,7 +283,7 @@
             this.SW_58993_button5.TabIndex = 9;
             this.SW_58993_button5.Text = "5";
             this.SW_58993_button5.UseVisualStyleBackColor = false;
-            this.SW_58993_button5.Click += new System.EventHandler(this.button_num_Click);
+            this.SW_58993_button5.Click += new System.EventHandler(this.SW_58993_button_num_Click);
             // 
             // SW_58993_button4
             // 
@@ -300,7 +300,7 @@
             this.SW_58993_button4.TabIndex = 8;
             this.SW_58993_button4.Text = "4";
             this.SW_58993_button4.UseVisualStyleBackColor = false;
-            this.SW_58993_button4.Click += new System.EventHandler(this.button_num_Click);
+            this.SW_58993_button4.Click += new System.EventHandler(this.SW_58993_button_num_Click);
             // 
             // SW_58993_buttonMultiply
             // 
@@ -316,7 +316,7 @@
             this.SW_58993_buttonMultiply.TabIndex = 7;
             this.SW_58993_buttonMultiply.Text = "*";
             this.SW_58993_buttonMultiply.UseVisualStyleBackColor = false;
-            this.SW_58993_buttonMultiply.Click += new System.EventHandler(this.buttonMultiply_Click);
+            this.SW_58993_buttonMultiply.Click += new System.EventHandler(this.SW_58993_buttonMultiply_Click);
             // 
             // SW_58993_button9
             // 
@@ -333,7 +333,7 @@
             this.SW_58993_button9.TabIndex = 6;
             this.SW_58993_button9.Text = "9";
             this.SW_58993_button9.UseVisualStyleBackColor = false;
-            this.SW_58993_button9.Click += new System.EventHandler(this.button_num_Click);
+            this.SW_58993_button9.Click += new System.EventHandler(this.SW_58993_button_num_Click);
             // 
             // SW_58993_button8
             // 
@@ -350,7 +350,7 @@
             this.SW_58993_button8.TabIndex = 5;
             this.SW_58993_button8.Text = "8";
             this.SW_58993_button8.UseVisualStyleBackColor = false;
-            this.SW_58993_button8.Click += new System.EventHandler(this.button_num_Click);
+            this.SW_58993_button8.Click += new System.EventHandler(this.SW_58993_button_num_Click);
             // 
             // SW_58993_button7
             // 
@@ -367,7 +367,7 @@
             this.SW_58993_button7.TabIndex = 4;
             this.SW_58993_button7.Text = "7";
             this.SW_58993_button7.UseVisualStyleBackColor = false;
-            this.SW_58993_button7.Click += new System.EventHandler(this.button_num_Click);
+            this.SW_58993_button7.Click += new System.EventHandler(this.SW_58993_button_num_Click);
             // 
             // SW_58993_buttonDivide
             // 
@@ -383,7 +383,7 @@
             this.SW_58993_buttonDivide.TabIndex = 3;
             this.SW_58993_buttonDivide.Text = "/";
             this.SW_58993_buttonDivide.UseVisualStyleBackColor = false;
-            this.SW_58993_buttonDivide.Click += new System.EventHandler(this.buttonDivide_Click);
+            this.SW_58993_buttonDivide.Click += new System.EventHandler(this.SW_58993_buttonDivide_Click);
             // 
             // SW_58993_buttonBack
             // 
@@ -399,7 +399,7 @@
             this.SW_58993_buttonBack.TabIndex = 2;
             this.SW_58993_buttonBack.Text = "←";
             this.SW_58993_buttonBack.UseVisualStyleBackColor = false;
-            this.SW_58993_buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            this.SW_58993_buttonBack.Click += new System.EventHandler(this.SW_58993_buttonBack_Click);
             // 
             // SW_58993_buttonNWD
             // 
@@ -415,7 +415,7 @@
             this.SW_58993_buttonNWD.TabIndex = 1;
             this.SW_58993_buttonNWD.Text = "NWD";
             this.SW_58993_buttonNWD.UseVisualStyleBackColor = false;
-            this.SW_58993_buttonNWD.Click += new System.EventHandler(this.buttonNWD_Click);
+            this.SW_58993_buttonNWD.Click += new System.EventHandler(this.SW_58993_buttonNWD_Click);
             // 
             // SW_58993_buttonNWW
             // 
@@ -431,7 +431,7 @@
             this.SW_58993_buttonNWW.TabIndex = 0;
             this.SW_58993_buttonNWW.Text = "NWW";
             this.SW_58993_buttonNWW.UseVisualStyleBackColor = false;
-            this.SW_58993_buttonNWW.Click += new System.EventHandler(this.buttonNWW_Click);
+            this.SW_58993_buttonNWW.Click += new System.EventHandler(this.SW_58993_buttonNWW_Click);
             // 
             // SW_58993_label1
             // 
@@ -444,12 +444,12 @@
             this.SW_58993_label1.Size = new System.Drawing.Size(594, 54);
             this.SW_58993_label1.TabIndex = 2;
             // 
-            // Math_UC
+            // SW_58993_Math_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.SW_58993_tableLayoutPanel1);
-            this.Name = "Math_UC";
+            this.Name = "SW_58993_Math_UC";
             this.Size = new System.Drawing.Size(600, 600);
             this.SW_58993_tableLayoutPanel1.ResumeLayout(false);
             this.SW_58993_tableLayoutPanel1.PerformLayout();

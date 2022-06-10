@@ -5,8 +5,6 @@ C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\bin\Debug\netcorea
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\bin\Debug\netcoreapp3.1\58993_SW_Projekt.dll
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\bin\Debug\netcoreapp3.1\58993_SW_Projekt.pdb
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\58993_SW_Projekt.csproj.AssemblyReference.cache
-C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.Form1.resources
-C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.Math_UC.resources
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\58993_SW_Projekt.csproj.GenerateResource.cache
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\58993_SW_Projekt.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\58993_SW_Projekt.AssemblyInfoInputs.cache
@@ -15,6 +13,8 @@ C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcorea
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\58993_SW_Projekt.dll
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\58993_SW_Projekt.pdb
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\58993_SW_Projekt.genruntimeconfig.cache
-C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.Sort_UC.resources
 C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.Properties.Resources.resources
-C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.Compress_UC.resources
+C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.SW_58993_Compress_UC.resources
+C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.SW_58993_Form1.resources
+C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.SW_58993_Math_UC.resources
+C:\Users\sndrw\source\repos\58993_SW_Projekt\58993_SW_Projekt\obj\Debug\netcoreapp3.1\_58993_SW_Projekt.SW_58993_Sort_UC.resources

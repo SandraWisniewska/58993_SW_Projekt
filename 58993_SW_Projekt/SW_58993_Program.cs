@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace _58993_SW_Projekt
 {
-    internal static class Program
+    internal static class SW_58993_Program
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -17,7 +17,7 @@ namespace _58993_SW_Projekt
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new SW_58993_Form1());
         }
     }
 }

@@ -10,44 +10,44 @@ using System.Windows.Forms;
 
 namespace _58993_SW_Projekt
 {
-    public partial class Form1 : Form
+    public partial class SW_58993_Form1 : Form
     {
-        public Form1()
+        public SW_58993_Form1()
         {
             InitializeComponent();
         }
 
         //zdarzenie następujące po kliknieciu opcji w menu
         //do pokazania algorytmu matematycznego
-        private void algorytmMatematycznyToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SW_58993_algorytmMatematycznyToolStripMenuItem_Click(object SW_58993_sender, EventArgs SW_58993_e)
         {
-            showUC(new Math_UC());
+            SW_58993_showUC(new SW_58993_Math_UC());
         }
 
         //zdarzenie następujące po kliknieciu opcji w menu
         //do pokazania algorytmu sortującego
-        private void algorytmSortujacyToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SW_58993_algorytmSortujacyToolStripMenuItem_Click(object SW_58993_sender, EventArgs SW_58993_e)
         {
-            showUC(new Sort_UC());
+            SW_58993_showUC(new SW_58993_Sort_UC());
         }
 
         //zdarzenie następujące po kliknieciu opcji w menu
         //do pokazania algorytmu kompresującego
-        private void algorytmKompresujacyToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SW_58993_algorytmKompresujacyToolStripMenuItem_Click(object SW_58993_sender, EventArgs SW_58993_e)
         {
-            showUC(new Compress_UC());
+            SW_58993_showUC(new SW_58993_Compress_UC());
         }
 
         //funkcja służąca do ustawiania user controlki na pierwszym planie
-        private void showUC(UserControl uc)
+        private void SW_58993_showUC(UserControl SW_58993_uc)
         {
-            uc.Dock = DockStyle.Fill;
+            SW_58993_uc.Dock = DockStyle.Fill;
             //usuń kontrolki z widoku
-            panel1.Controls.Clear();
+            SW_58993_panel1.Controls.Clear();
             //dodaj kontrolke do widoku
-            panel1.Controls.Add(uc);
+            SW_58993_panel1.Controls.Add(SW_58993_uc);
             //ustaw kontrolke na froncie
-            uc.BringToFront();
+            SW_58993_uc.BringToFront();
         }
     }
 }
